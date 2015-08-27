@@ -1,0 +1,21 @@
+<h1><%= ids[0]["title"] %></h1>
+
+<table style="width:100%">
+<tr>
+  <td><%= ids[0]["year"] %></td>
+  <td><%= ids[0]["rating"] %></td>
+  <td><%= ids[0]["genre"] %></td>
+  <td><%= ids[0]["studio"] %></td>
+</tr>
+</table>
+<p></p>
+<table style="width:100%">
+<% ids.each do |actor| %>
+<tr>
+  <td><a href='/actors/<%= actor["id"] %>'><%= actor["actors"] %></a></td>
+  <td><%= actor["character"] %></td>
+</tr>
+
+
+<% end %>
+</table>

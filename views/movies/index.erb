@@ -1,0 +1,16 @@
+<h1>Movie Catalog Deluxe With Cheese</h1>
+
+<table style="width:100%">
+  <% movies.each do |movie| %>
+  <tr>
+    <td><a href='/movies/<%= movie["id"] %>'><%= movie["title"] %></a></td>
+    <td><%= movie["year"] %></td>
+    <td><%= movie["rating"] %></td>
+    <td><%= movie["genre"] %></td>
+    <td><%= movie["studio"] %></td>
+
+  </tr>
+
+
+  <% end %>
+</table>

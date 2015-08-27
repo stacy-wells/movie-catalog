@@ -1,0 +1,12 @@
+<h1><%= ids[0]["name"] %></h1>
+
+<table style="width:100%">
+<% ids.each do |movie| %>
+<tr>
+  <td><a href='/movies/<%= movie["id"] %>'><%= movie["title"] %></a></td>
+  <td><%= movie["character"] %></td>
+</tr>
+
+
+<% end %>
+</table>
